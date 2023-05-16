@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greivance redressal ssy</title>
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./switchusers.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="board">
+            <h2 class="text-light">Greivance Redressal System</h2>
+            <p class="text-light">Choose your Portal</p>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+                            The admin portal can be accessed by global admins who have the Administrator role like  principal, dean in your organization. 
+                            In the admin portal you can view queries, checklist the queries,provide faster response to students 
+                                                       
+                        </div>
+                        <div class="profile">
+                            <a href="adminlogin.html"><img src="https://tse4.mm.bing.net/th?id=OIP.DsHbKyMIRwyu7Mbp8f4KKwHaHY&pid=Api&P=0" alt=""></a>
+                            <a href="#">Admin</a>
+                            <span>Portal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex">
+                        <div class="comments">
+                            The students portal can be accessed by all college students for sending academic and non-acadenic queries
+                            directly to the higher authority without revealing your identity
+                         </div>
+                        <div class="profile">
+                           <a href="studentlogin.html"><img src="https://tse4.mm.bing.net/th?id=OIP.DsHbKyMIRwyu7Mbp8f4KKwHaHY&pid=Api&P=0" alt=""></a>
+                            <a href="#">Student</a>
+                            <span>Portal</span>
+                        </div>
+                    </div>
+                </div>
+                        
+                        
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="./switchusers.js"></script>
+</body>
+</html>

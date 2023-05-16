@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Login Page in HTML with CSS Code Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./studentlogin.css">
+
+</head>
+<body>
+	<div class="btn">
+		<button><a href="./index.html">back</a></button>
+		</div>
+	
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+	  <div class="overlay">
+	  <h1>B.N.M.Institute of Technology</h1>
+	  <div class="text">
+	  <p>An Autonomous Institution under VTU,Approved by AICTE</p>
+	  </div>
+	 
+	  </div>
+	</div>
+		
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		
+		<div class="inputs">
+			<input type="text" required="required" id="email">
+			<span>Username</span>
+			<i></i>
+			<br>
+			<input type="password" required="required" id="password">
+			<span>Password</span>
+			<i></i>
+		  </div>
+			
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+				<!-- Angular -->
+	<label>
+		<input type="checkbox" name="item" checked/>
+		<span class="text-checkbox">Remember me</span>
+	</label>
+			
+		</div>
+			
+			<br>
+           
+			<button onclick="signIn()">LOGIN</button>
+	</div>
+	
+</div>
+<!-- partial -->
+<script src=
+"https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+    </script>
+     
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyCpmYG00SD6A-v3eSxvQ4RLSCYwkUNM2GA",
+  authDomain: "webdev-46c60.firebaseapp.com",
+  databaseURL: "https://webdev-46c60-default-rtdb.firebaseio.com",
+  projectId: "webdev-46c60",
+  storageBucket: "webdev-46c60.appspot.com",
+  messagingSenderId: "414159662770",
+  appId: "1:414159662770:web:4231ef9526df42a97ca3ab",
+  measurementId: "G-GB8J08YNKT"
+};
+ 
+        firebase.initializeApp(firebaseConfig);
+ 
+       
+    </script>
+    <script src="./studentlogin.js"></script>
+  
+</body>
+</html>

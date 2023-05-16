@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="btn">
+            <button><a href="homepage.html">back</a></button>
+            </div>
+        
+        <h2>QUERY FORM</h2>
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="query type....." />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="emailid" placeholder="sem" />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message......"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <textarea id="sol" cols="30" rows="10" placeholder="Solution......"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="forms.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.nav-links{
+    text-align: right;
+    background: #75efeb;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+ ul li a{
+    color:black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family:poppins;
+    font-size: 18px;
+    position: relative;
+}
+ul li a::after{
+    content:'';
+    width: 0;
+    height: 10px;
+    background: #c377ef;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:-20px;
+    transition:0.5s ;
+}
+ul li a:hover::after{
+   width:100%
+}
+.left-sidebar{
+    width:20%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background:#75efeb ;
+}
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+.left-col{
+    flex-basis: 40%;
+}
+.right-col{
+    flex-basis:55%;
+    margin-bottom: 10%;
+}
+.left-col img{
+    width:80%;
+    cursor: pointer;
+    filter:grayscale(0);
+    transition: filter 1s;
+}
+.left-col img:hover{
+    filter: grayscale(1);
+}
+.right-col h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.right-col h2{
+    font-size: 30px;
+    font-weight:400;
+}
+.right-col p{
+    color: #777;
+    margin: 20px 0 70px;
+}
+.icon{
+    margin-left: 75%;
+    position: relative;
+    
+}
+
+.icon span{
+    width: 200px;
+    text-align: center;
+    opacity: 0.4;
+    
+}
+.icon span i{
+    height: 20px;
+    margin:  0 10px;
+    
+}
+.icon::after{
+    content: '';
+    width: 148px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 10px;
+}
+.btn button{
+    padding: 7px 30px;
+    margin-left:25%;
+    outline: none;
+    border: 1px solid #75efeb;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000000;
+    background: #75efeb;
+}
+
+

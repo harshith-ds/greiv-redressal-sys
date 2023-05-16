@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login Panel</title>
+  <link rel="stylesheet" href="adminlogin.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="myform">
+    
+        <h2>ADMIN LOGIN</h2>
+        <input type="email" placeholder="email" id="email">
+        <input type="password" placeholder="password" id="password">
+        <button type="submit"onclick="signIn()">LOGIN</button>
+     
+    </div>
+    <div class="image">
+      <img src="adminlogin.jpg">
+    </div>
+  </div>
+  <script src=
+  "https://www.gstatic.com/firebasejs/3.7.4/firebase.js">
+      </script>
+       
+      <script>
+          const firebaseConfig = {
+              apiKey: "AIzaSyCpmYG00SD6A-v3eSxvQ4RLSCYwkUNM2GA",
+    authDomain: "webdev-46c60.firebaseapp.com",
+    projectId: "webdev-46c60",
+    storageBucket: "webdev-46c60.appspot.com",
+    messagingSenderId: "414159662770",
+    appId: "1:414159662770:web:4231ef9526df42a97ca3ab",
+    measurementId: "G-GB8J08YNKT"
+          };
+   
+          firebase.initializeApp(firebaseConfig);
+   
+         
+      </script>
+      <script src="./adminlogin.js"></script>
+    
+</body>
+</html>
